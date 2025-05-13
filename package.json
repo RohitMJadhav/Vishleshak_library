@@ -3,12 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/types/index.d.ts",
+  "main": "src/index.jsx",
+   "files":["src"],
   "scripts": {
     "dev": "vite",
-    "build": "tsup src/index.tsx --format esm,cjs --dts",
+    "build": "tsup src/index.jsx --format esm,cjs --dts",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -33,4 +32,5 @@
     "typescript": "^5.8.3",
     "vite": "^6.3.5"
   }
+
 }
